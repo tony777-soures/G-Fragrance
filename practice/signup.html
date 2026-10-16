@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | G-Fragrance</title>
+  <link rel="stylesheet" href="auth.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <a class="auth-back" href="index.html">← Back to G-Fragrance</a>
+
+    <section class="auth-card">
+      <div class="auth-brand">G-Fragrance</div>
+      <p class="auth-kicker">CREATE YOUR ACCOUNT</p>
+      <h1>Welcome to your fragrance journey.</h1>
+      <p class="auth-intro">Create an account to stay connected with G-Fragrance.</p>
+
+      <form id="signupForm" class="auth-form" novalidate>
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+
+        <label for="phone">Phone number</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+234 800 000 0000" required>
+
+        <label for="password">Password</label>
+        <div class="password-wrap">
+          <input id="password" name="password" type="password" autocomplete="new-password" placeholder="Create a strong password" required minlength="8">
+          <button type="button" class="password-toggle" data-target="password" aria-label="Show password">Show</button>
+        </div>
+
+        <label class="terms-check">
+          <input id="terms" name="terms" type="checkbox" required>
+          <span>I agree to the <a href="terms.html" target="_blank" rel="noopener">Terms &amp; Conditions</a>.</span>
+        </label>
+
+        <button class="auth-submit" type="submit">Create account</button>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+
+      <p class="auth-switch">Already have an account? <a href="login.html">Login</a></p>
+    </section>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>

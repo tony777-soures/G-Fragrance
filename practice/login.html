@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | G-Fragrance</title>
+  <link rel="stylesheet" href="auth.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <a class="auth-back" href="index.html">← Back to G-Fragrance</a>
+
+    <section class="auth-card">
+      <div class="auth-brand">G-Fragrance</div>
+      <p class="auth-kicker">WELCOME BACK</p>
+      <h1>Return to your signature experience.</h1>
+      <p class="auth-intro">Login with the username created for your account and your password.</p>
+
+      <form id="loginForm" class="auth-form" novalidate>
+        <label for="loginName">Name</label>
+        <input id="loginName" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" autocomplete="username" placeholder="Your username" required>
+
+        <label for="loginPassword">Password</label>
+        <div class="password-wrap">
+          <input id="loginPassword" name="password" type="password" autocomplete="current-password" placeholder="Your password" required>
+          <button type="button" class="password-toggle" data-target="loginPassword" aria-label="Show password">Show</button>
+        </div>
+
+        <button class="auth-submit" type="submit">Login</button>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+
+      <p class="auth-switch">New to G-Fragrance? <a href="signup.html">Create an account</a></p>
+    </section>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "g-fragrance",
+  "version": "1.0.0",
+  "private": true,
+  "description": "G-Fragrance website with SQLite account authentication",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "better-sqlite3": "^12.4.1",
+    "connect-sqlite3": "^0.9.17",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "helmet": "^8.1.0"
+  }
+}
